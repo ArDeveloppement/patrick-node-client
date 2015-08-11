@@ -1,0 +1,18 @@
+{
+  "name": "patrick-client",
+  "version": "0.0.1",
+  "description": "[WIP] A CLI client for patrick",
+  "author": "",
+  "dependencies": {
+    "merge": "~1.2",
+    "mkdirp": "~0.5",
+    "cli-table": "~0.3",
+    "colors": "~1",
+    "commander": "~2.8",
+    "readline-sync": "~1.2",
+    "request": "~2"
+  },
+  "bin": {
+    "patrick": "patrick.js"
+  }
+}
