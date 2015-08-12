@@ -51,9 +51,6 @@ program
     .alias('l')
     .description('List available tasks')
     .action(function () {
-        console.log("Here is the tasks list available from the server.".magenta)
-        console.log("You can execute them with the `run` command. Ex: patrick run <task>".magenta)
-
         client.getTasks(function (res, body) {
             var tasks = body.reduce(function (arr, t) {
                 arr.push([t.name, t.description])
@@ -62,6 +59,9 @@ program
 
             var table = new Table({})
             table.push.apply(table, tasks)
+
+            console.log("Here is the tasks list available from the server.".magenta)
+            console.log("You can execute them with the `run` command. Ex: patrick run <task>".magenta)
             console.log(table.toString())
         })
     });
