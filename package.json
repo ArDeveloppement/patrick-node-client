@@ -1,6 +1,6 @@
 {
   "name": "patrick-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "[WIP] A CLI client for patrick",
   "author": "",
   "dependencies": {
